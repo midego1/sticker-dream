@@ -1,5 +1,7 @@
 # Sticker Dream
 
+![](./dream.png)
+
 A voice-activated sticker printer. Press and hold the button, describe what you want, and it generates a black and white coloring page sticker that prints to a thermal printer.
 
 ## How it works
