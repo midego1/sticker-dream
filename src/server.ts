@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { serve } from '@hono/node-server';
 import { cors } from 'hono/cors';
 import { GoogleGenAI } from "@google/genai";
-import { printToUSB, watchAndResumePrinters } from './src/print.ts';
+import { printToUSB, watchAndResumePrinters } from './print.js';
 
 const app = new Hono();
 const PORT = 3000;
