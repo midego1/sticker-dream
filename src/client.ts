@@ -76,7 +76,9 @@ async function resetRecorder() {
     recordBtn.textContent = "Dreaming Up...";
 
     // Automatically generate and print
-    await generateAndPrint(text);
+    if(text && !text.includes('BLANK')) {
+      await generateAndPrint(text);
+    }
     recordBtn.textContent = "Sending to Printer...";
     await wait(3000);
     recordBtn.textContent = "Printing...";
@@ -114,7 +116,7 @@ recordBtn.addEventListener("pointerdown", async () => {
       mediaRecorder.stop();
       mediaRecorder.stream.getTracks().forEach((track) => track.stop());
     }
-  }, 5000);
+  }, 15000);
 });
 
 // Stop recording when button is released

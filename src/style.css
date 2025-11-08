@@ -72,6 +72,7 @@ sup {
 }
 img {
   border-style: none;
+  pointer-events: none;
 }
 button,
 input,
@@ -200,8 +201,8 @@ textarea {
 
 /* Record Button */
 .record {
-  font-size: 50px;
-  padding: 2px;
+  font-size: 40px;
+  padding: 50px 2px;
   background: var(--pastel-green);
   color: var(--dark-text);
   border: 8px solid var(--dark-text);

@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { serve } from '@hono/node-server';
 import { cors } from 'hono/cors';
 import { GoogleGenAI } from "@google/genai";
-import { printToUSB, watchAndResumePrinters } from './print.js';
+import { printToUSB, watchAndResumePrinters } from './print.ts';
 
 const app = new Hono();
 const PORT = 3000;
@@ -31,7 +31,7 @@ async function generateImage(prompt: string): Promise<Buffer | null> {
   console.time('generation');
 
   const response = await ai.models.generateImages({
-    model: imageGen4Ultra,
+    model: imageGen3,
     prompt: `A black and white kids coloring page.
     <image-description>
     ${prompt}
