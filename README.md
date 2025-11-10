@@ -6,7 +6,7 @@ A voice-activated sticker printer. Press and hold the button, describe what you 
 
 ## How it works
 
-1. Hold the button and speak (max 5 seconds)
+1. Hold the button and speak (max 15 seconds)
 2. Whisper transcribes your voice
 3. Google Imagen generates a coloring page based on your description
 4. Image displays in browser and prints to USB thermal printer
